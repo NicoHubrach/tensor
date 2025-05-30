@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.10)
 project(tensor)
 
-add_library(tensor INTERFACE
+add_library(libtensor INTERFACE
     src/include/tensor/format.hpp
     src/include/tensor/index_generator.hpp
     src/include/tensor/layout.hpp
@@ -14,4 +14,4 @@ add_library(tensor INTERFACE
     src/include/tensor/types.hpp
 )
 
-target_include_directories(tensor INTERFACE src/include)
+target_include_directories(libtensor INTERFACE src/include)
